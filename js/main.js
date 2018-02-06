@@ -18,7 +18,7 @@ let Languages = {
 var transButton = document.getElementById("translate");
 var output = document.getElementById("output");
 var outputArea = document.getElementById("output").value;
-var clearButton = document.getElementById("clear");
+var clearButton = document.getElementById("clear-btn");
 console.log("test");
 
 let lexicon = require("./lexicon");
@@ -33,6 +33,7 @@ var greeting = ["merry","christmas","and", "happy", "new", "year"];
 var translatedGreeting= [];
 
 function translate (){
+	userInput();
 
 // Prop names are to put each property name into an array
 var spanPropNames = (Object.getOwnPropertyNames(spanish));
@@ -148,9 +149,11 @@ function enter(event) {
 	} else if (event.keyCode != 13) {
 	}
 }
-
-function clearArea(){
-	document.getElementById("output").value = "";
+function userInput(){
+	return document.getElementById("output").value;
+}
+function eraseText() {
+    document.getElementById("output").value = "";
 }
 
 // enter press spanish
@@ -166,5 +169,5 @@ document.getElementById("translate").addEventListener("click", translate);
 // on enter press translate
 document.getElementById("translate").addEventListener("keypress", enter);
 
-clearButton.addEventListener("click", clearArea);
+
 
