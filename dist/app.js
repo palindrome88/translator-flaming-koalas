@@ -135,8 +135,8 @@ let Languages = {
 
 var transButton = document.getElementById("translate");
 var output = document.getElementById("output");
-var outputArea = document.getElementById("output").value;
-var clearButton = document.getElementById("clear-btn");
+var inputWords = document.getElementById("output").value;
+
 console.log("test");
 
 let lexicon = require("./lexicon");
@@ -269,9 +269,6 @@ function enter(event) {
 }
 function userInput(){
 	return document.getElementById("output").value;
-}
-function eraseText() {
-    document.getElementById("output").value = "";
 }
 
 // enter press spanish
