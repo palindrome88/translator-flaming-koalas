@@ -14,16 +14,16 @@ let outputIcelandic = lexicon.output_Icelandic;
 
 function translate (){
 	if (document.getElementById("spanish").checked){
-		return output_spanish;
+		return outputSpanish;
 	}
 	if (document.getElementById("czech").checked){
-		return output_czech;
+		return outputCzech;
 	}
 	if (document.getElementById("french").checked){
-		return output_french;
+		return outputFrench;
 	}
 	if (document.getElementById("icelandic").checked){
-		return output_icelandic;
+		return outputIcelandic;
 	}
 
 }

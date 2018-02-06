@@ -12,7 +12,7 @@ function spanish() {
 		"year":"ano"
 	};
     
-	return czech;
+	return spanish;
 }
 
 module.exports = spanish;
