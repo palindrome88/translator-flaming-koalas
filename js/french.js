@@ -1,7 +1,5 @@
 "use strict";
 
-function french() {
-
 	var french = {
 		"merry":"joyeux",
 		"christmas":"Noel",
@@ -11,8 +9,5 @@ function french() {
 		"year":"fetes"
 	};
     
-	return french;
-
-}
 
 module.exports = french;

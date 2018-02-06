@@ -1,7 +1,4 @@
 "use strict";
-function czech() {
-
-
 	var czech = {
 
 		"merry":"vesele", 
@@ -11,8 +8,5 @@ function czech() {
 		"new":"novy", 
 		"year":"rok"
 	};
-    
-	return czech;
-}
 
 module.exports = czech;
