@@ -14,13 +14,16 @@ let outputIcelandic = lexicon.output_Icelandic;
 
 function translate (){
 	if (document.getElementById("spanish").checked){
-		return outputSpanish;
+		return output_spanish;
 	}
 	if (document.getElementById("czech").checked){
-		return outputCzech;
+		return output_czech;
 	}
 	if (document.getElementById("french").checked){
-		return outputFrench;
+		return output_french;
+	}
+	if (document.getElementById("icelandic").checked){
+		return output_icelandic;
 	}
 
 }
@@ -29,10 +32,6 @@ function translate (){
 
 // on click or enter get info
 
-// translate
-function translate() {
-}
-    
 
 
 
@@ -50,6 +49,8 @@ document.getElementById("spanish").addEventListener("keypress", enter);
 document.getElementById("czech").addEventListener("keypress", enter);
 // enter press french
 document.getElementById("french").addEventListener("keypress", enter);
+// enter press icelandic
+document.getElementById("icelandic").addEventListener("keypress", enter);
 // on click
 document.getElementById("translate").addEventListener("click", translate);
 
