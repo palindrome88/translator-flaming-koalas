@@ -7,35 +7,39 @@
     <title>Translated Greeting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Welcome to the Holiday Greeting Translator!</h1>
+    <div class="welcome"><h1>Welcome to the Holiday Greeting Translator!</h1>
+    </div>
 
     <section class"user-select">
-        <!-- Type Here:<input type="text" name="greeting" id="user-input"></input><br> -->
-        <textarea>"Merry Christmas and Happy New Year"</textarea><br>
+
+    <div class="user-input-area">    
+        <label for="prompt-user-to-type">Type your greeting here:</label>
+        <br>
+        <textarea id="input" name="user-greeting-input"></textarea>
+    </div>
+        <!-- Type Here:<input type="text" name="greeting" id="user-input"></input> -->
+        <br>
         <input type="radio" name="lang" id="spanish">Spanish<br>
         <input type="radio" name="lang" id="czech">Czech<br>
         <input type="radio" name="lang" id="french">French<br>
-        <input type="radio" name="lang" id="icelandic">Icelandic<br>
-
+        <input type="radio" name="lang" id="icelandic">Icelandic
+        <br>
+        
         <button id="translate">Translate</button><br>
     </section>
-
+        <br>
+        <br>
     <div class="text-conversion-area">    
-        <label for="user-instruction">Write your holiday greeting that you would like translated here:</label>
+        <label for="user-instruction">Here is your translated greeting!</label>
           <br>
-            <textarea id="user-input" name="pre-translation-greeting"></textarea>
-    </div>
-    
-    <div>
-        <h2>Here is your translated greeting!</h2>
-    
-        <p id="translated-greeting"></p>
+            <textarea id="output" name="translated-greeting"></textarea>
     </div>
 <!-- ------------------------------------------ -->
-    <script src="js/spanish.js"></script>
-    <script src="js/czech.js"></script>
+   <!-- <script src="js/spanish.js"></script>
+    <script src="js/czech.js"></script> -->
 </body>
 </html>
