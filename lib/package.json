@@ -8,13 +8,15 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "grunt-browserify": "^5.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "browserify": "^15.2.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.2.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
     "matchdep": "^2.0.0"
   }
