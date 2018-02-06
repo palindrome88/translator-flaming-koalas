@@ -57,4 +57,6 @@ document.getElementById("french").addEventListener("keypress", enter);
 document.getElementById("icelandic").addEventListener("keypress", enter);
 // on click
 document.getElementById("translate").addEventListener("click", translate);
+// on enter press translate
+document.getElementById("translate").addEventListener("keypress", enter);
 
