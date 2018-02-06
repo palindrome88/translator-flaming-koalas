@@ -1,6 +1,7 @@
 "use strict";
 
 var transButton = document.getElementById("translate");
+var output = document.getElementById("output");
 
 console.log("test");
 
@@ -16,18 +17,22 @@ function translate (){
 	if (document.getElementById("spanish").checked){
 		console.log("spanish");
 		console.log(outputSpanish);
+		output.innerHTML = outputSpanish;
 		return outputSpanish;
 	}
 	if (document.getElementById("czech").checked){
 		console.log("czech");
+		output.innerHTML = outputCzech;
 		return outputCzech;
 	}
 	if (document.getElementById("french").checked){
 		console.log("french");
+		output.innerHTML = outputFrench;
 		return outputFrench;
 	}
 	if (document.getElementById("icelandic").checked){
 		console.log("icelandic");
+		output.innerHTML = outputIcelandic;
 		return outputIcelandic;
 	}
 
