@@ -1,5 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-
 "use strict";
 function czech() {
 
@@ -69,7 +68,8 @@ let Languages = {
 
 	czech,
 	spanish,
-	french
+	french,
+	lexicon
 
 };
 
@@ -115,6 +115,7 @@ function lexicon() {
 		
 		}
 	}
+
 	var output_czech = newsentence.join(" ");
 	var output_french = newsentence2.join(" ");
 	var output_spanish = newsentence3.join(" ");
@@ -140,18 +141,22 @@ let outputFrench = lexicon.output_French;
 let outputSpanish = lexicon.output_Spanish;
 let outputIcelandic = lexicon.output_Icelandic;
 
-
 function translate (){
 	if (document.getElementById("spanish").checked){
+		console.log("spanish");
+		console.log(outputSpanish);
 		return outputSpanish;
 	}
 	if (document.getElementById("czech").checked){
+		console.log("czech");
 		return outputCzech;
 	}
 	if (document.getElementById("french").checked){
+		console.log("french");
 		return outputFrench;
 	}
 	if (document.getElementById("icelandic").checked){
+		console.log("icelandic");
 		return outputIcelandic;
 	}
 
@@ -182,6 +187,8 @@ document.getElementById("french").addEventListener("keypress", enter);
 document.getElementById("icelandic").addEventListener("keypress", enter);
 // on click
 document.getElementById("translate").addEventListener("click", translate);
+// on enter press translate
+document.getElementById("translate").addEventListener("keypress", enter);
 
 
 },{"./lexicon":4}],6:[function(require,module,exports){
