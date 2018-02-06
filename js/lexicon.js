@@ -14,17 +14,6 @@ let Languages = {
 
 };
 
-var keypair = {
-
-	"merry": "MERRY", 
-	"christmas": "CHRISTMAS",
-	"and": "AND",
-	"a" : "A",
-	"happy": "HAPPY",
-	"new" : "NEW",
-	"year": "YEAR"
-    
-};
 
 function lexicon() {
 
@@ -74,10 +63,10 @@ function lexicon() {
 		}
 	}
 	var output_czech = newsentence.join(" ");
-	var output2_french = newsentence2.join(" ");
-	var output3_spanish = newsentence3.join(" ");
-	var output4_icelandic = newsentence4.join(" ");
-	return output_czech, output2_french, output3_spanish, output4_icelandic;
+	var output_french = newsentence2.join(" ");
+	var output_spanish = newsentence3.join(" ");
+	var output_icelandic = newsentence4.join(" ");
+	return output_czech, output_french, output_spanish, output_icelandic;
 
 }
 /* for( var word in sentence)
