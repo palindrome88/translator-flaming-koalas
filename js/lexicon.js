@@ -28,59 +28,42 @@ function lexicon() {
 			if(sentence[word] === key){ // Compare the word to the Key
 				newsentence.push(czech[key]); // Append the keypair into the array
 			}
-			//var temp1 = key; //first entry
-			//var temp2 = keypair[key]; // second entry
 		}
 	}
 	// FRENCH TRANSLATOR
-	for (var word in sentence){ // For each word in the sentence
-		for( var key in french){ // For each key in the key pair
-			if(sentence[word] === key){ // Compare the word to the Key
-				newsentence2.push(french[key]); // Append the keypair into the array
+	for (var word1 in sentence){ // For each word in the sentence
+		for( var key1 in french){ // For each key in the key pair
+			if(sentence[word1] === key1){ // Compare the word to the Key
+				newsentence2.push(french[key1]); // Append the keypair into the array
 			}
-			//var temp1 = key; //first entry
-			//var temp2 = keypair[key]; // second entry
 		}
 	}
 	// SPANISH TRANSLATOR
-	for (var word in sentence){ // For each word in the sentence
-		for( var key in spanish){ // For each key in the key pair
-			if(sentence[word] === key){ // Compare the word to the Key
-				newsentence3.push(spanish[key]); // Append the keypair into the array
+	for (var word2 in sentence){ // For each word in the sentence
+		for( var key2 in spanish){ // For each key in the key pair
+			if(sentence[word2] === key2){ // Compare the word to the Key
+				newsentence3.push(spanish[key2]); // Append the keypair into the array
 			}
-		//var temp1 = key; //first entry
-		//var temp2 = keypair[key]; // second entry
+		
 		}
 	}	
 	// ICELANDIC TRANSLATOR
-	for (var word in sentence){ // For each word in the sentence
-		for( var key in icelandic){ // For each key in the key pair
-			if(sentence[word] === key){ // Compare the word to the Key
-				newsentence3.push(icelandic[key]); // Append the keypair into the array
+	for (var word3 in sentence){ // For each word in the sentence
+		for( var key3 in icelandic){ // For each key in the key pair
+			if(sentence[word3] === key3){ // Compare the word to the Key
+				newsentence3.push(icelandic[key3]); // Append the keypair into the array
 			}
-		//var temp1 = key; //first entry
-		//var temp2 = keypair[key]; // second entry
+		
 		}
 	}
 	var output_czech = newsentence.join(" ");
 	var output_french = newsentence2.join(" ");
 	var output_spanish = newsentence3.join(" ");
 	var output_icelandic = newsentence4.join(" ");
+	
 	return output_czech, output_french, output_spanish, output_icelandic;
 
 }
-/* for( var word in sentence)
-	if (sentence[word] === keypair){
-		newsentence.push = (sentence[index])
-	}
 
-}); */
-
-
-/* for (var i = 0; i < greeting.length; i++){
-	temp = greeting.match(/`${keypair[i]}`/g);
-	document.getElementsByClassName("demo")[0].innerHTML += temp;
-
-} */
 
 module.exports = Lanugages;
