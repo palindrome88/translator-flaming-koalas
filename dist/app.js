@@ -75,7 +75,7 @@ let Languages = {
 
 
 function lexicon() {
-
+console.log("lex works");
 	var greeting = "merry christmas and a happy new year"; // INPUT FROM CONSOLE HERE
 	var sentence, newsentence, newsentence2, newsentence3, newsentence4 = []; // newsentence## input values to be translated
 	
