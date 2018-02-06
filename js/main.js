@@ -11,10 +11,10 @@ let outputFrench = lexicon.output_French;
 let outputSpanish = lexicon.output_Spanish;
 let outputIcelandic = lexicon.output_Icelandic;
 
-
 function translate (){
 	if (document.getElementById("spanish").checked){
 		console.log("spanish");
+		console.log(outputSpanish);
 		return outputSpanish;
 	}
 	if (document.getElementById("czech").checked){
