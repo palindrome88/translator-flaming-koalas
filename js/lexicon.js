@@ -11,7 +11,7 @@ let Languages = {
 	czech,
 	spanish,
 	french,
-	lexicon
+	icelandic
 
 };
 

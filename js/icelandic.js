@@ -1,6 +1,5 @@
 "use strict";
 
-function icelandic() {
 
 	var icelandic = {
 		"merry": "gleðilegt",
@@ -11,8 +10,8 @@ function icelandic() {
 		"year": "ár"
 	};
 
-	return icelandic;
 
-}
+
+
 
 module.exports = icelandic;
