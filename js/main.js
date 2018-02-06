@@ -1,27 +1,25 @@
 "use strict";
 
-var transButton = document.getElementById("translate")
+var transButton = document.getElementById("translate");
 
 console.log("test");
 
-let lexicon = require("/.lexicon");
-let spanish = require("/.spanish");
-let czech = require("/.czech");
-let french = require("/.french");
+let lexicon = require("./lexicon");
+
 
 
 
 
 function translate (){
-    if (document.getElementById("spanish").checked){
-        return outputSpanish
-    }
-    if (document.getElementById("czech").checked){
-        return outputCzech
-    }
-    if (document.getElementById("french").checked){
-        return outputFrench
-    }
+	if (document.getElementById("spanish").checked){
+		return output_Czech;
+	}
+	if (document.getElementById("czech").checked){
+		return outputCzech;
+	}
+	if (document.getElementById("french").checked){
+		return outputFrench;
+	}
 
 }
 
@@ -31,17 +29,17 @@ function translate (){
 
 // translate
 function translate() {
-    }
+}
     
 
 
 
 // on enter keypress
 function enter(event) {
-    if (event.keyCode === 13) {
-        translate();
-    } else if (event.keyCode != 13) {
-    }
+	if (event.keyCode === 13) {
+		translate();
+	} else if (event.keyCode != 13) {
+	}
 }
 
 // enter press spanish
