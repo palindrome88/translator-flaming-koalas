@@ -10,7 +10,8 @@ let Languages = {
 
 	czech,
 	spanish,
-	french
+	french,
+	lexicon
 
 };
 
@@ -56,6 +57,7 @@ function lexicon() {
 		
 		}
 	}
+
 	var output_czech = newsentence.join(" ");
 	var output_french = newsentence2.join(" ");
 	var output_spanish = newsentence3.join(" ");
