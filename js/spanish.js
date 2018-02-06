@@ -1,13 +1,19 @@
-var spanishLex = {
-    "merry":"feliz",
-    "christmas":"Navidad",
-    "and":"y",
-    "happy":"gott",
-    "new":"nytt",
-    "ear":"år"
-}
+"use strict";
 
-console.log(Object.keys(spanishLex(2)))
+function spanish() {
+	var spanish = {
+		"merry":"feliz",
+		"christmas":"Navidad",
+		"and":"y",
+		"happy":"gott",
+		"new":"nytt",
+		"ear":"år"
+	};
+
+	return spanish;
+    
+}
+// console.log(Object.keys(spanishLex(2)))
 // transButton = document.getElementById("translate");
 // greeting = ["merry","christmas","and", "a", "happy", "new", "year"]
 // console.log(spanishLex["merry"])
@@ -33,3 +39,4 @@ console.log(Object.keys(spanishLex(2)))
 
 // transButton.addEventListener("click",translateToSpanish);
 
+module.exports = spanish;
