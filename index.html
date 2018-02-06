@@ -6,13 +6,11 @@
 
     <title>Translated Greeting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
-<body>
 
-</head>
 <body>
-    <h1>Select Language</h1>
+    <h1>Welcome to the Holiday Greeting Translator!</h1>
 
     <section class"user-select">
         Type Here:<input type="text" name="greeting" id="user-input"></input><br>
@@ -22,12 +20,18 @@
 
         <button id="translate">Translate</button><br>
     </section>
-<!-- This is where we will output the translated text -->
-<div class="translation-box">    
-  <label for="translation-area">Translation:</label>
-    <br>
-      <textarea id="translation" name="translated-greeting"></textarea>
-</div>
+
+    <div class="text-conversion-area">    
+        <label for="user-instruction">Write your holiday greeting that you would like translated here:</label>
+          <br>
+            <textarea id="user-input" name="pre-translation-greeting"></textarea>
+    </div>
+    
+    <div>
+        <h2>Here is your translated greeting!</h2>
+    
+        <p id="translated-greeting"></p>
+    </div>
 <!-- ------------------------------------------ -->
     <script src="js/spanish.js"></script>
     <script src="js/czech.js"></script>
