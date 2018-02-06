@@ -1,4 +1,20 @@
 body {
     box-sizing: border-box;
-    color: maroon;
+    background-color: mintcream;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.welcome {
+    color: maroon;   
+}
+
+.user-input {
+    width: 20%;
+}
+
+textarea {
+    width: 30%;
+    height: 100px;
+    border-radius: 15px;
+
 }
