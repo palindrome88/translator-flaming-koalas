@@ -83,4 +83,4 @@ function lexicon() {
 
 } */
 
-module.exports = Lanugages;
+module.exports = Languages;
