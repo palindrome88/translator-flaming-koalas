@@ -17,8 +17,8 @@ let Languages = {
 
 var transButton = document.getElementById("translate");
 var output = document.getElementById("output");
-
-
+var outputArea = document.getElementById("output").value;
+var clearButton = document.getElementById("clear");
 console.log("test");
 
 let lexicon = require("./lexicon");
@@ -34,15 +34,14 @@ var translatedGreeting= [];
 
 function translate (){
 
+// Prop names are to put each property name into an array
 var spanPropNames = (Object.getOwnPropertyNames(spanish));
 var czePropNames = (Object.getOwnPropertyNames(czech));
 var frenPropNames = (Object.getOwnPropertyNames(french));
 var icePropNames = (Object.getOwnPropertyNames(icelandic));
-output.innerHTML = "";
-
+// check to see if spanish is selected
 	if (document.getElementById("spanish").checked){
-		console.log("works");
-		console.log(spanPropNames);
+
 		for(let i=0;i<greeting.length;i++){
 			var currentWord = greeting[i];
 			// console.log("current word",currentWord);
@@ -51,7 +50,7 @@ output.innerHTML = "";
 				// console.log("compare word", compareWord)
 				if(currentWord === compareWord){
 					var x = spanish[compareWord];
-					// console.log("push", x)
+// if word matches the compared word, 
 					translatedGreeting.push(x);
 	
 				}
@@ -150,6 +149,10 @@ function enter(event) {
 	}
 }
 
+function clearArea(){
+	document.getElementById("output").value = "";
+}
+
 // enter press spanish
 document.getElementById("spanish").addEventListener("keypress", enter);
 // enter press czech
@@ -162,4 +165,6 @@ document.getElementById("icelandic").addEventListener("keypress", enter);
 document.getElementById("translate").addEventListener("click", translate);
 // on enter press translate
 document.getElementById("translate").addEventListener("keypress", enter);
+
+clearButton.addEventListener("click", clearArea);
 
